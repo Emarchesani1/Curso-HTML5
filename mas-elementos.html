@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        *fieldset: agrupa elementos dentro de un formulario. Estéticamente se pone un borde que se puede cambair con CSS. Cada label dentro del fieldset podría estar dentro de un div.
+        *legend: pone una etiqueta al contenido del fielset, como un título 
+        *input type file: se hace poco solo con html. Es mejor usarlo con CSS y Js. Sirve para cargar archivos para enviar, pero para mostrar barra de progreso o la miniatura de lo que se subió se necesita javascript.
+        *meter: representa un valor dentro de un rango conocido. Hay atributos, por ejemplo para contar la cantidad de gasolina con colores. Tiene un atributo id que se corresponde con el atributo for de label. Atributos son min, max, value (el value aparece en verde). low=30 quiere decir que lo que esté por debajo de 30 como valie, se pintará en amarillo. high es otro atributo por ejemplo 75.  optimum es el valor que consideramos optimo.
+        *progress: para representar el progreso de una tarea. Sus atributos son como los de meter. Value indica el progreso, lo que se va rellenando. probablemente no usemos esta etiqueta
+        textarea: es para texto en un formulario
+
+    -->
+    <form>
+        <fieldset>
+            <legend>datos personales</legend>
+            <label for="name">Nombre</label>
+            <input type="text" id="name">
+            <label for="surname">Apellidos</label>
+            <input type="text" id="surname">
+        </fieldset>
+        <input type="file">
+
+        <label for="fuel">Combustible</label>
+        <meter id="fuel" min="0" max="100" value="50" low="30" high="75" optimum="50"></meter>
+        <label for="task">Tarea 1</label>
+        <progress id="task" max="100" value="10"></progress>
+        <label for="message">Mensaje  </label>
+        <textarea name="" id="message" cols="60" rows="20">
+        </textarea>
+    </form>
+</body>
+
+</html>

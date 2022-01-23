@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesibilidad</title>
+</head>
+
+<!--hacer una página web diseñándola para navegadores de terminal o navegadores que leen la página web y la dictan, pensado para personas no videntes con un navegador por voz. tabindex es un atributo pensado para etiquetas que permiten al usuario navegar con la tecla tab en el orden indicado por tab index.
+el atributo role y aria está para gente no vidente. Se puede usar con chrome vox.  
+-->
+
+<body>
+    <a href="#" role="link" aria-label="Leer más sobre la noticia del agua en marte"></a>
+    <p tabindex="1">Párrafo 1</p>
+    <p tabindex="3">Párrafo 2</p>
+    <p tabindex="2">Párrafo 3</p>
+</body>
+
+</html>

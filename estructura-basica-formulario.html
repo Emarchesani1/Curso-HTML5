@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        El comportamiento de un formulario por defecto de un formulario es recargar la página.
+        
+        etiqueta form: engloba nuestro formulario. El atributo action de form indica dónde se envía la información del formulario. Si pusiera como atributo action="enviar.html" diría que no existe la página enviar.html. Lo que se hace es pausar el envio del formulario en js, y luego el mismo js envía el formulario. Otra cosa que puede llevar es  un documento de servidor que puede ser php.  
+        label: nombre del campo a rellenar. Tiene un atributo for y allí hay que indicar el atributo id que tiene la etiqueta input. De esta manera se asocia un label a un input. Hay otra forma.
+        input: campo que se dibuja para que le usuario pueda ingresar informacion. Lleva el atributo idf.
+        button: sirve para enviar el formulario.
+
+        Además de vincular label e input hay otra forma: poner input dentro de label.
+    -->
+    <form>
+        <!--
+        <label for="name">Nombre</label>
+        <input id="name"> -->
+        <label>
+            Nombre 
+            <input>
+        </label>
+        <button>Enviar formulario</button>
+    </form>
+</body>
+
+</html>

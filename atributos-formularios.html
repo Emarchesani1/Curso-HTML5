@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        atributos de los input type text de los formularios:
+
+        *placeholder: para estilos, no se utiliza el placeholder.
+        *required: el campo no se puede dejar en blanco al enviar el formulario, aparece una advertencia. El required podría ser borrado por el usuario en el inspector de elemento. Por eso, hay validaciones que se hacen desde JS o desde el servidor. No es la medida de seguridad más segura, pero es conveniente ponerlo para que el navegador y el usuario sepan que es obligatorio ese campo.
+        *readonly: convierte un campo en solo lectura, el campo se puede seleccionar pero no se puede escribir ni borrar, aunque se puede modificar con el inspector de elementos. Sin embargo, es conveniente que los campos que no se puedan modificar tengan readonly. El formulario se envía. Pero si en lugar de readonly ponemos disabled, no se ilumina, no podemos hacer clic sobre él y al enviar el formulario no se manda la información.     
+        *min y max: atributos de input type number, controla los valores de un campo numérico. Sale una advertencia si no está en el rango establecido por min y max. Las advertencis son widgets y se pueden modificar desde CSS y Javascript. No tienen que ir los dos, puede ir uno solo. Tampoco son obligatorios para el formulario.
+        *minlength y maxlength: sirven para lo mismo que min max, pero para campos de texto, como input type text. Si no anda el mínimo y permite escribir menos caracteres aún, ponerle required.
+        selected: es como el equivalente a checked en los select. Es decir, deja la opcion por defecto.
+        autofocus: poner el foco por defecto al cargar el formulario. Es simular que el usuario hizo clic y ya en ese campo el usuario puede escribir, como es el caso del autofocus empleado abajo.
+        Ver link con los atributos de la documentación.
+    -->
+    <form>
+        <input type="text" placeholder="Introduce tu nombre" required>
+        <input type="text" value="Hola" readonly>
+        <input type="text" value="Hola" disabled>
+        <select name="numbers">
+        <option value="one">One</option>
+        <option value="two">Two</option>
+        </select>
+
+        <input type="number" min="5" max="10">
+        <input type="text" minlegth="3" maxlength="5" required autofocus>
+        <input type="submit">
+    </form>
+</body>
+
+</html>

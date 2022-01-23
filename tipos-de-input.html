@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+    input type: 
+    *button: se comporta igual que la etiqueta button. a input type se le debe agregar un atributo value con el texto que quiero que tenga el boton. La diferencia con la etiqueta button es que input type button no envia el formulario. Sin embargo, el button, si lo manda y recarga la página. Input type button es para que haga una operación en JS, pero no para enviar el formulario. Si queremos que a través de un input se envie el formulario, debemos poner input type submit.  
+    *submit: se le puede poner un value y envía el formulario.
+
+    *date:dia mes y año, funciona bien en los navegadores
+    *datetime: esta obsoleto, se comporta como un campo de texto. No usar. 
+    *datetime-local: no funciona en Firefox. Es para fecha y hora. Para que funcione datetime-local hay que crear además de input date, y otro input type= "time".
+    *month: para mes y año. 
+    *week: para una semana de un año en concreto.
+
+    Lo siguiente se conecta a un celular:
+    *search
+    *tel
+    *email
+    *password. Si pusiéramos text como value o un input solo, no se oculta el contenido como en password.
+    *url. Sugiere una URL.
+
+    Los usamos con div para verlos en una columna. También los usamos con un label. Windows + cmd + ipconfig (ip de nuestro ordenador). Esta ip sería lo mismo que muestra la url del live server: 127.0.0.1. Un puerto es :5500 en la url. Un puerto es un punto de acceso para cada ip. Esto tiene que ver con redes. En un movil, poner la ip del ordenador, dos puntos, el puerto de live server + /formularios. El teclado del movil cambia segun el type.
+
+    Miscelánea
+    *color: muestra una plantilla de colores para elegir un color. Para que el usuario elija el color de fondo de la página, del texto, etc. 
+    *number: es para escribir valores numéricos en un campo, salen unas flechitas para subir y bajar, que se llaman widgets y cambian el aspecto segun el navegador, aunque se puede cambiar con CSS y JS.
+    *range: crean una barra que puede seleccionar un rango. Atributo step que determina de cuánto en cuánto se mueve la barra. También tiene atributos min y max para mover de 10 en 10, por ejemplo. O se 5 en 5, según el step.
+    *reset: sirve para resetear todo el formulario. Aparece un botón con la leyenda Reestablecer. Borra todos los datos introducidos en el formulario.
+    *text: es el valor por defecto, equivale a no poner nada. 
+    *hidden: se relaciona con el text. Si tenemos este input, que se muestre (text) o no (hidden) según lo que ingresa el usuario (se hace con Javascript, que permite cambiar de hidden a text).
+
+-->
+    <!--
+    <form>
+        <input type="text">
+        <input type="button" value="Enviar">
+        <!-- <input type="submit" value="Enviar input">-->
+    <!--<button>Enviar</button>
+    </form>
+    -->-->
+
+    <!--
+    <form>
+        <input type="date">
+        <input type="datetime-local" value="time">
+
+        <input type="date">
+        <input type="time">
+
+        <input type="month">
+
+        <input type="week">
+    </form>-->
+
+    <!--
+    <div>
+        <label>Search
+        <input type="seach">
+    </label>
+    </div>
+
+    <div>
+        <label>Teléfono
+        <input type="tel">
+    </label>
+    </div>
+
+    <div>
+        <label>Email
+        <input type="email">
+    </label>
+    </div>
+
+    <div>
+        <label>Password
+        <input type="password">
+    </label>
+    </div>
+
+    <div>
+        <label>Url
+        <input type="url">
+    </label>
+    </div>
+    -->
+
+    <form>
+        <input type="color">
+        <input type="number">
+        <input type="range" step="5" min="0" max="20">
+        <input type="reset">
+        <input type="text">
+    </form>
+
+</body>
+
+</html>

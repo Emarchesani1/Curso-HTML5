@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de línea</title>
+</head>
+
+<body>
+    <h1>Elementos de línea</h1>
+    <!--
+        <em> </em> emphasis es para darle más importancia que el resto del texto. No pone el texto en cursiva en realidad, como se ve, sino que está en CSS. Esto sería más importante, sería un valor de 1 en una escala de importancia. El resto del texto tendría importancia 0.
+        <strong> </strong> Es lo más importante de la frase. Luego sigue en importancia la etiqueta em, y luego el resto del texto. Esto tiene importancia 2.
+        <small></small> Esta parte tiene menos importancia para el texto. Esto tiene importancia -1. 
+        <br> forzar un salto de línea. Para romper el texto en un punto concreto. No se cierra. Poner la barra /br era de documentos XHTML. Se puede usar boton derecho, dar formato al documento con, no elegir prettier, sino configurar el formateador predeterminado y elegir caracteristicas del formato html para qu eno salga la barra. No pasa nada si lo dejamos con la barra. Funciona igual.
+        No hay que poner varios br para hacer varios saltos de línea. Esto es estético y lo hace CSS. 
+        <wbr> word breaker opportunity. Si tenemos que cortar una palabra larga que no cabe porque se minimiza la ventana, puede ser que yo quiera que se corte el texto en determinados lugares cuando se achica la ventana. Entonces wbr corta el texto en los lugares donde indico. Los guiones - son interpretados como una etiqueta wbr. Los guiones bajo no rompen el texto. Esta etiqueta no se cierra.  
+        <time> Se usa para representar un contenido de fecha y hora. Se usa para blogs o posts, ya que aquí importa la fecha y la hora. El navegador entiende que es una fecha y le da la importancia semántica que debe tener una fecha o una hora. No hace falta que estén la fecha y la hora. Puede estar una de ellas solamente.  
+            Estas sí son equiquetas de estilo:
+            i italic
+            b bold
+            u underline
+            Pero la negrita y el underline se hacen con CSS. Es más conveniente para no manchar el código. Y la italic también se usa con CSS, pero la i es importante cuando se trabaja con librería de iconos. Esto no se ve en el curso. Los iconos van en una etiqueta i. Ir a fontawesome.com, icons, y veremos que está dentro de una etiqueta i y tiene una clase. 
+
+            Estas dos no se utilizan mucho:
+            sup Superíndice
+            sub Subíndice
+    -->
+    <p><em>El dinero</em> es importante, pero <strong>la salud</strong> es lo más importante. <small>Saludos.</small></p>
+    <p>Lorem ipsum, dolor sit amet <br> consectetur adipisicing elit. Blanditiis, exercitationem voluptatem consequuntur mollitia error rerum quas, numquam officia voluptatibus, veritatis perspiciatis dolorum alias ab incidunt qui eveniet? Optio, tempora
+        saepe!
+    </p>
+    <p>http://127.0.0.5646/<wbr>cursos/<wbr>html/elementos/elementosdelinea</p>
+
+    <time>24/10/2020 10:35</time>
+
+    <p>
+        <i>italic</i>
+        <b>bold</b>
+        <u>underline</u>
+    </p>
+
+    <p>4 elevado al cuadrado se representa así 4<sup>2</sup></p>
+
+    <p>Agua oxigenada tiene la fórmula H<sub>2</sub>O<sub>2</sub></p>
+</body>
+
+</html>

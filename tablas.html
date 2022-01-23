@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        col:nth-child(1) {
+            background-color: aquamarine;
+        }
+        
+        col:nth-child(2) {
+            background-color: salmon;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Las tres etiquetas principales de una tabla son:
+    table: 
+    tr: table row. Construye cada fila.
+    td: table data. Construye una celda. La cantidad de celdas es la cantidad de columnas. 
+
+    caption: para el título de la tabla. Se debe colocar justo después de la etiqueta table.
+    thead: cabecera de la tabla. Si tenemos un thead, para el contenido de la tabla hay que poner tbody.
+    th: table head. Es para cada celda de la cabecera de la tabla. Van dentro de un tr.
+    tbody: si o si si hay un thead.
+    tfoot: no es obligatorio. 
+
+    rowspan: para que las celdas ocupen mas de una fila. Valor por defecto es 1.
+    colspan: para que las celdas ocupen más de una columna. Valor por defecto es 1.
+
+    colgroup: sirve para seleccionar una columna entera. Dentro de la etiqueta colgroup va la etiqueta col. Cada etiqueta col representa una columna. Si queremos que un col ocupe más de una columna, agregarle span como atributo. Span lleva números. Si pongo col span="5", entonces la primera columna es la agrupación de las 5 primeras columnas. 
+    -->
+    <h1>Tablas</h1>
+
+    <table>
+        <caption>HORARIO DE CLASES</caption>
+        <colgroup>
+            <col span="5">
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th></th>
+                <th>L</th>
+                <th>M</th>
+                <th>X</th>
+                <th>J</th>
+                <th>V</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:30 - 9:30</td>
+                <td>Matemáticas</td>
+                <td>Matemáticas</td>
+                <td>Sociales</td>
+                <td>Matemáticas</td>
+                <td>Matemáticas</td>
+            </tr>
+
+            <tr>
+                <td>9:30 - 10:25</td>
+                <td>Lengua</td>
+                <td>Lengua</td>
+                <td>Matemáticas</td>
+                <td>Ciencias</td>
+                <td>Lengua</td>
+            </tr>
+
+            <tr>
+                <td>10:25 - 11:20</td>
+                <td>Ed física</td>
+                <td>Ciencias</td>
+                <td>Lengua</td>
+                <td>Lengua</td>
+                <td>Ed física</td>
+            </tr>
+
+            <tr>
+                <td>11:20 - 11:45</td>
+                <td colspan="5">Recreo</td>
+            </tr>
+
+            <tr>
+                <td>11:45 - 12:40</td>
+                <td>Inglés</td>
+                <td>Sociales</td>
+                <td>Inglés</td>
+                <td>Tutoría</td>
+                <td>Inglés</td>
+            </tr>
+
+            <tr>
+                <td>12:40 - 13:35</td>
+                <td rowspan="2">Tecnología</td>
+                <td>Ed física</td>
+                <td>Plástica</td>
+                <td>Religión</td>
+                <td>Música</td>
+            </tr>
+
+            <tr>
+                <td>13:35 - 14:30</td>
+                <td>Francés</td>
+                <td>Tecnología</td>
+                <td>Francés</td>
+                <td>Tecnología</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Total de asignaturas</td>
+                <td>12</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

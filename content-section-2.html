@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección de Contenido 2</title>
+</head>
+
+<!-- 
+    Las etiquetas article pueden contener a las etiquetas section y viceversa.
+    También podemos tener un section dentro de otro. 
+
+    section: es un contenedor genérico que agrupa contenido que está relacionado. Cuando creamos bloques cuyo contenido es parte de un bloque total usaremos section.
+
+    article: es un contenedor que representa contenido independiente, es decir, podemos leer ese fragmento en cualquier otro sitio y tendría sentido por sí mismo.
+
+    aside: se utiliza para representar contenido relacionado con el contenido principal, pero que no forma parte del contenido principal. Puede ir dentro o fuera de main.
+
+    Abajo de todo veremos código de anidamiento como ejemplo. A continuación se explica lo que es un anidamiento.
+
+    Anidamiento de articles:
+    Un section puede contener articles, por ejemplo, supongamos que tenemos la sección noticias, y varias noticias que forman esta sección. 
+    Cada noticia debe ir dentro de articles y éstas dentro de un section. La sección es noticas y como todas son noticias están relacionadas. Los article serían contenido independiente, porque podríamos leer una noticia sin haber leído el resto, y seguiría teniendo sentido. 
+    El article puede tener un heading (<h1>) sino será un warning, y un header y un footer propios. Los h1 pueden ir dentro de un header.
+
+    Anidamiento de sections:    
+    Un article puede contener varios sections, el artículo independiente podría ser navegadores y este contener dentro secciones como navegadores mas utilizados en 2020. 
+    Cada navegador debe ir dentro de sections y estos dentro de un article. El articulo es navegadores web y tiene secciones, cada una con un navegador. Los article serían contenido independiente, porque podríamos leer una noticia sin haber leído el resto, y seguiría teniendo sentido. 
+    El article puede tener un heading (<h1>), y un header y un footer propios. Los h1 pueden ir dentro de un header.
+
+ -->
+
+<body>
+    <header>
+        <h1>Cursos de desarrollo web gratuitos</h1>
+        <!--<h1>Noticias nacionales</h1> -->
+    </header>
+    <aside>visita mi canal de youtube</aside>
+    <main>
+        <!-- validator.w3.org -->
+        <!--<section>
+            <h2>Section como contenedor</h1>
+                <section>
+                    <h3>Noticias del día</h2>
+            <article>
+                <header>
+                    <h4>Noticia 1</h4>
+                </header>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni nam a excepturi unde, ipsum quaerat incidunt laboriosam quibusdam cumque qui nisi amet. Quas consectetur velit accusantium voluptates amet molestias dolorum?</p>
+                <footer>La noticia 1 ocurrió en Madrid</footer>
+            </article>
+
+            <article>
+                <h4>Noticia 2</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni nam a excepturi unde, ipsum quaerat incidunt laboriosam quibusdam cumque qui nisi amet. Quas consectetur velit accusantium voluptates amet molestias dolorum?</p>
+            </article>
+            <article>
+                <h4>Noticia 3</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni nam a excepturi unde, ipsum quaerat incidunt laboriosam quibusdam cumque qui nisi amet. Quas consectetur velit accusantium voluptates amet molestias dolorum?</p>
+            </article>
+            </section>
+        </section> -->
+
+        <!--
+        <article>
+            <h2>Navegadores más utilizados en 2020</h2>
+            <section>
+                <header>
+                    <h3>Chome</h3>
+                </header>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit consequatur eveniet quidem facilis porro eius nostrum eligendi nemo, dicta non cum sunt quibusdam, quam possimus quaerat tenetur vero consequuntur! Repellendus.</p>
+                <footer>Creado por Google</footer>
+            </section>
+            <section>
+                <h3>Firefox</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laudantium voluptatem ipsa, repellendus reiciendis facilis natus quos debitis aliquam quaerat vero ratione accusamus aspernatur maxime delectus, expedita molestias, saepe molestiae!</p>
+            </section>
+        </article>
+        -->
+    </main>
+    <footer>4-11-2020</footer>
+</body>
+
+</html>

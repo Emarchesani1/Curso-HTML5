@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos</title>
+    <style>
+        .parrafo-1 {
+            color: red
+        }
+    </style>
+</head>
+<!--Los atributos son valores. Se agregan a las etiquetas para modificar su comportamiento o configurarlas. Ejemplos de atributos:
+    class o clase: es una atributo que se usa para dar estilos con CSS. Un class se puede utilizar en una etiqueta <p>. Para poner CSS colocar en el head la etiqueta style.
+    id: atributo para identificar la etiqueta y se usa con javascript o con anclas (se ve en la sección de enlaces). Para javascript, en el body, poner la etiqeuta <script>
+    title: atributo para mostrar una descripción del elemento en el cual está incluido title. Cuando ponemos el cursor sobre lo que está dentro de p, que tiene el atributo title, entonces se despliega un cartelito, llamado tooltip.
+    data- despues del guion se pone cualquier palabra para identificar. Sirve para javascript. Se usa el id. dataset.elnombredespuesdelguion
+
+-->
+
+<body>
+    <p class="parrafo-1">Clases</p>
+    <p id="parrafo">Identificador a través de un id</p>
+    <p title="Este es un ejemplo del atributo title">Título con tooltip</p>
+    <p id="parrafo-2" data-ejemplo="Datos de ejemplo">Datos pasados en la etiqueta</p>
+    <script>
+        const p = document.getElementById('parrafo')
+        const parrafo2 = document.getElementById('parrafo-2')
+
+        console.log(p.textContent)
+        console.log(parrafo2.dataset.ejemplo)
+    </script>
+</body>
+
+</html>

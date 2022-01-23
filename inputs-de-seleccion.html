@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Tenemos valores en una lista de opciones. Esos valores se pueden seleccionar con un input de seleccion. Hay tres tipos de inputs de selección:
+
+        radio: permite seleccionar una única opción de una lista de opciones relacionadas. Botón redondo. El atributo name tiene que ser iguan en todos los inpurs que estén relacionados para que solo se seleccione una opcion. Name es atributo de input type=radio y de input type=otros... Si uno de los input radio quisiera que salga marcado por defecto, tenemos el atributo booleando checked. Atributo value: le decimos el valor del elemento. Cuando se envie al servidor, éste recibe gender y masculino para saber la categoría a la que pertenece y el valor. 
+    
+        checkbox: nos permiten seleccionar varias opciones de una lista de opciones relacionadas. Es para tildar. Puede ir primero el input y luego el label, y viceversa. También tenemos checked si queremos que aparezca uno por defecto. La diferencia es que podemos ponérselo a todos el checked, pero no el input radio. 
+
+        select: en realidad no es un input, pero está incluido en la selección de valores porque permite seleccionar elementos. Son una etiqueta aparte. Es una mezcla entre radio y checkbox porque nos permiten trabajar con una o varias opciones. Sale un menu desplegable. Con option value se elijen las opciones. En radio y en checkbox el name había que ponerlo en el input junto con el value. Acá el name va en select y los value van en option. En el select tenemos el atributo múltiple para seleccionar más de uno con ctrl. 
+    
+        Elemento select avanzado:
+        si tenemos muchas opciones podemos oidenarlas por categorías con la etiqueta optgroup para agrupar opciones y con el atributo label nombraríamos la csategpría. 
+
+        Datalist: son como los select pero tienen un filtro para que se pueda buscar de manera más sencilla. Previamente hay qu eponer un inpur de tipo lista para crear un filtro. Tenemos que usar el atributo list en ese imput. Datalist es la lista que tiene que tener un id que se corresponda con el atributo list del input type list. Salen dos opciones del desplegables: el value y una descripción, que es lo que va entre etiquetas de option, que se puede omitir (sería como un subtítulo). Lo más importante del datalist en lugar de un select es que incluye un filtro de búsuqueda. Busca por lo que contenga esa palabra.
+
+    -->
+
+    <h1>Elementos seleccionables</h1>
+    <!--
+    <form>
+        <label>Masculino
+            <input type="radio" name="gender" value="masculino">
+        </label>
+        <label>Femenino
+            <input type="radio" name="gender" checked value="femenino">
+        </label>
+    </form>
+    -->
+    <!--
+    <h2>Lenguajes que conocer</h2>
+    <label>
+        HTML
+        <input type="checkbox" name="languages" value="html">
+    </label>
+    <label>
+        CSS
+        <input type="checkbox" name="languages" value="css">
+    </label>
+    <label>
+        Javascript
+        <input type="checkbox" name="languages" value="Javascript">
+    </label>
+-->
+    <!--
+    <form>
+        <select name="lenguajes">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">Javascript</option>
+        </select>
+    </form>-->
+    <!--
+    <form>
+        <select name="mascotas">
+       
+            <optgroup label="4 patas">
+                <option value="perro">Perro</option>
+                <option value="gato">gato</option>
+            </optgroup>
+            
+            <optgroup label="aves">
+                <option value="hornero">hornero</option>
+                <option value="gorrion">gorrión</option>
+            </optgroup>
+       
+        </select>
+    </form>
+-->
+    <form>
+        <input type="list" list="mascotas">
+        <datalist id="mascotas">
+            <option value="perro">Perro</option>
+            <option value="gato">gato</option>
+        </datalist>
+    </form>
+</body>
+
+</html>

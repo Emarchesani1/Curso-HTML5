@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--A continuación se presenta la sintaxis correcta de un menú de navegación:-->
+    <nav>
+        <ul>
+            <li><a href="/web-demo/blog.html#post-1">Post 1</a></li>
+            <li><a href="/web-demo/blog.html#post-2">Post 2</a></li>
+            <li><a href="/web-demo/blog.html#post-3">Post 3</a></li>
+            <li><a href="/web-demo/blog.html#post-4">Post 4</a></li>
+        </ul>
+    </nav>
+
+    <h2>Lista de la compra</h2>
+    <ul>
+        <li>Pan</li>
+        <li>Huevos</li>
+        <li>Leche</li>
+    </ul>
+
+    <h2>Orden de aprendizaje en el desarrollo web</h2>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <!--Listas de definición o definition list dl
+        Cada elemento de una lista de definición lleva definition term y definition description.
+    -->
+    <h2>Lenguajes para el desarrollo web</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext markup language: es un lenguaje de marcado que se usa para estructurar datos en una página web. </dd>
+    </dl>
+    <dl>
+        <dt>CSS</dt>
+        <dd>Cascade Style Sheet: es un lenguaje de diseño que se usa para dar estilos al HTML. </dd>
+    </dl>
+    <dl>
+        <dt>JavaScript</dt>
+        <dd>Es un lenguaje de programación para dar interactividad a un sitio web. </dd>
+    </dl>
+
+    <!--también se pueden construir listas anidadas: son aquellas listas donde existe un ol o ul dentro de otros li, y luego dentro de esos ol otros li. Es decir, que en las listas anidadas hay dos niveles de li. A continuación, un ejemplo.-->
+
+    <ul>
+        <li>
+            HTML
+            <ol>
+                <li>Estructuras</li>
+                <li>Sintaxis</li>
+                <li>Etiquetas</li>
+            </ol>
+        </li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <!--Atributos de las listas:
+        1. Atributos de ol:
+        Type: podemos poner "1", "A", "a", "I", "i" (los dos últimos en romano)
+        start: en qué numero quiero que empiece la lista.
+        Se pueden combinar start con type. Primeri poner type y luego start. 
+        2. Atributos de ul:
+        Type: es el estilo de los items, y sus valores son disk, square, circle. En CSS se pueden poner imagenes, logotipos, iconos.
+    -->
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+</body>
+
+</html>

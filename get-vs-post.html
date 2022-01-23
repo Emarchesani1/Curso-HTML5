@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Get y post son dos métodos que se usan en javascript
+    Método get: se ejecuta cuando entramos a una página a través de la URL. Método por defecto. en la URL pone /enviar.html? Si no puede hacer el Get, se muestra Cannot GET /formularios/enviar.html. Después del ? van los campos que se envian del formulario. Con el name como atributo, se envía la información.Y luego del ? se ponen los valores. Si escribo en los campos, aparece en la URL. 
+
+
+    Post: envío de formularios a través de la parte de atras de la página. No nos dice que no puede hacer un get, sino un error 405. Es decir, que intentó enviar la información pero no encontró el archivo al cual enviarle la información. En la URL no aparecen los datos que enviamos con name. Ir a la consola, network, pero esto hay que tenerlo abierto al enviar el formulario por post. Donde pone Font Data están los campos que enviamos.
+
+-->
+
+    <form action="enviar.html" method="GET">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name">
+
+        <label for="surname">Apellido</label>
+        <input type="text" id="surname" name="surname">
+
+        <input type="submit">
+    </form>
+</body>
+
+</html>
